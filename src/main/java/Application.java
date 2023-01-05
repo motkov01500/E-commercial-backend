@@ -1,3 +1,5 @@
+import exceptions.NotFoundInArrayList;
+
 public class Application {
     public static void main(String[] args) throws NotFoundInArrayList {
         Product pasta = new Product ("pasta",10.99);
