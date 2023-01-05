@@ -6,7 +6,13 @@ public class Cart {
     private ArrayList<CartItem> items = new ArrayList<>();
     private int deliveryFee;
     
-    public 
+   public void setDeliveryFee(int deliveryFee) {
+        this.deliveryFee = deliveryFee;
+    }
+
+    public int getDeliveryFee() {
+        return deliveryFee;
+    }
     
     public Cart(){
     }
@@ -24,16 +30,16 @@ public class Cart {
         }
         if(sum > 0) {
             if (sum < 100) {
-                deliveryFee = 10;
+                setDeliveryFee(10);
             } else if (sum < 200) {
-                deliveryFee = 5;
+                setDeliveryFee(5);
             } else {
-                deliveryFee = 0;
+                setDeliveryFee(0);
             }
         }else{
             System.out.println("Your cart is empty. Please add an item to calculate!");
         }
-        return (sum + deliveryFee) - calculateVAT(sum);
+        return (sum + getDeliveryFee()) - calculateVAT(sum);
     }
 
     //Add the item to the cart
