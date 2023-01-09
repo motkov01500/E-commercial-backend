@@ -1,7 +1,5 @@
-import exceptions.NotFoundInArrayList;
-
 public class Application {
-    public static void main(String[] args) throws NotFoundInArrayList {
+    public static void main(String[] args) {
         Product pasta = new Product ("pasta",10.99);
         Product radio = new Product();
         Product pizza = new Product("pizza",5.50);
@@ -18,13 +16,13 @@ public class Application {
         cart.addItemToCart(itemTwo);
         cart.addItemToCart(itemThree);
 
-        cart.CartItemsDetails();
+        cart.CartItemDetails();
 
         System.out.println("=========================================================");
 
         cart.deleteItemFromCart(itemTwo);
         cart.deleteItemFromCart(itemThree);
 
-        cart.CartItemsDetails();
+        cart.CartItemDetails();
     }
 }
