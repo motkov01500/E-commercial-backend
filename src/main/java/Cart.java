@@ -72,7 +72,7 @@ public class Cart {
             int itemQuantity = item.get().getQuantity();
             itemQuantity--;
             if (itemQuantity < 1) {
-                items.remove(items.indexOf(item.get()));
+                items.remove(item.get());
             }
             item.get().setQuantity(itemQuantity);
         }catch (Exception exception){
