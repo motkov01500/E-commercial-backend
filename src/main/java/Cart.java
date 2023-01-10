@@ -81,10 +81,9 @@ public class Cart {
     }
 
     /**
-     * Display in the console number of the cart different items without their quantity and products details which is in the cart and final price $.
+     * Display in the console number of the cart different items with their quantity and products details which is in the cart and final price $.
      */
-
-        public String toString() {
+    public String toString() {
         String cartSize = String.format("There are %s elements in cart\n",items.size());
         String cartItemByItem = "";
         for (int i = 0;i< items.size();i++) {
@@ -94,6 +93,9 @@ public class Cart {
         return cartSize + cartItemByItem + cartFinalPrice;
     }
 
+    /**
+     * Display the details of the Cart object to the console.
+     */
     public void CartItemDetails() {
         System.out.println(toString());
     }
