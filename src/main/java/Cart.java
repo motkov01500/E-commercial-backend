@@ -83,6 +83,7 @@ public class Cart {
     /**
      * Display in the console number of the cart different items with their quantity and products details which is in the cart and final price $.
      */
+    @Override
     public String toString() {
         String cartSize = String.format("There are %s elements in cart\n",items.size());
         String cartItemByItem = "";

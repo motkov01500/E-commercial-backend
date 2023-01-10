@@ -34,6 +34,10 @@ public class Product {
         return price;
     }
 
+    /**
+     * Method about details of the Product object
+     */
+    @Override
     public String toString() {
         return "Product label is:" + getLabel() + ". The product price is: " + getPrice();
     }
