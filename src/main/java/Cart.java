@@ -97,7 +97,7 @@ public class Cart {
     /**
      * Display the details of the Cart object to the console.
      */
-    public void CartItemDetails() {
+    public void cartItemDetails() {
         System.out.println(toString());
     }
 }
